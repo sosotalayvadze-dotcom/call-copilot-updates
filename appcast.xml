@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Call Copilot</title>
+        <item>
+            <title>13.0-test</title>
+            <pubDate>Sat, 24 Oct 2026 18:21:00 +0000</pubDate>
+            <link>https://sosotalayvadze-dotcom.github.io/call-copilot-updates/</link>
+            <sparkle:version>13.0.17</sparkle:version>
+            <sparkle:shortVersionString>13.0-test</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.2</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Version 13 — English and Turkish</h3>
+<ul>
+<li>Choose the spoken language: English or Turkish. A small EN/TR switch is on the main screen next to the Call / Briefing / History tabs, and the same choice is in Settings → Spoken Language. The app remembers it.</li>
+<li>Switch during a call: one click (or the shortcut) changes the language for your microphone, the customer and the answers. The call, the microphone and WhatsApp keep running, and everything said before stays; the next answer uses it, in the new language.</li>
+<li>Keyboard shortcut from any app (WhatsApp, Chrome, Zoom): Control-Option-L by default. Change it or turn it off in Settings.</li>
+<li>Turkish answers are written in natural spoken Turkish with Turkish letters; words like website, hosting and domain, names and your prices stay exactly as they are. The app itself stays in English.</li>
+<li>The status beside the switch shows what is really happening: "TR — Listening", "Switching Language", "Recognition Unavailable" or "Microphone Unavailable".</li>
+<li>Settings → Language test: speak a sentence in English or Turkish and see the text, or test one answer in that language, without a call.</li>
+<li>If your Mac cannot recognize Turkish for one side, the app says so instead of pretending; the test report lists every switch and how long it took.</li>
+</ul>
+<h3>Version 12.3</h3>
+<ul>
+<li>Connected sentences ("Facebook works fine for us. Don't need anything else.") get one answer, never while the customer is still talking.</li>
+<li>Common moments are answered at once without the AI: Facebook, "happy as we are", "no time for extra stuff", "go ahead, 20 seconds".</li>
+<li>"No time for extra stuff" means the work, not the call: never asks for 20 seconds again.</li>
+<li>When the AI is busy or slow (over 1.2 s), the approved line appears instead of nothing; a busy provider is paused for a while.</li>
+<li>Your misheard microphone words ("Greg") no longer confuse the copilot.</li>
+<li>If the AI is too slow on an unusual question, you get an honest "Good question, I'll confirm that" line instead of a sales line.</li>
+<li>The test report shows where the time went: hearing the customer vs. getting the answer, and how many answers were instant.</li>
+</ul>
+]]></description>
+            <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/CallCopilot-13.0.17.zip" length="5543626" type="application/octet-stream" sparkle:edSignature="EYii4RVesfSExoTEd2fTu4xu0o9P5Rtr0eOFTrBOmG+xo60df6cjkgWCkaq5xLafurs88PN6u0YqKbOcgpwIDA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/Call%20Copilot13.0.17-12.3.12.delta" sparkle:deltaFrom="12.3.12" length="1345466" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976240" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="/B7961IS07FDqS2bPf2/KmImidGEFyQ6eu8jd1DOMd/1LmpynpA9foJZ6kT/B2Ekv5cjCagNkBsuCvLJHzRyAw=="/>
+                <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/Call%20Copilot13.0.17-12.3.11.delta" sparkle:deltaFrom="12.3.11" length="1343238" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976240" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="t41kVtIn/sTbGe19jaHssTeZSKamzSUpvLB9F89N7Tum9rbPLEsxmSjEYgx3sYSByPIHTIWwwFIV8SZOmLioBQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>12.3-test</title>
+            <pubDate>Wed, 21 Oct 2026 11:30:47 +0000</pubDate>
+            <link>https://sosotalayvadze-dotcom.github.io/call-copilot-updates/</link>
+            <sparkle:version>12.3.12</sparkle:version>
+            <sparkle:shortVersionString>12.3-test</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.2</sparkle:minimumSystemVersion>
+            <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/CallCopilot-12.3.12.zip" length="5260993" type="application/octet-stream" sparkle:edSignature="AbHkE/1E4FvaVmYsmQ9Pmo3I+DJJbMgzRYEDngL54MTRWkO5oDY8qlRk9zFJkQzfXjUOQco/hXiNzFYUlvRDDQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/Call%20Copilot12.3.12-12.3.11.delta" sparkle:deltaFrom="12.3.11" length="282790" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976240" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="2ve63x9tzR4b5dIal67WjMHrXhHe7qpXmtMPfE6wyzhB+e07T9G9oxfkYzYGx0R+TQpWsWWfIEbH/BQ8dszODg=="/>
+                <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/Call%20Copilot12.3.12-12.3.10.delta" sparkle:deltaFrom="12.3.10" length="376666" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976240" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="c5EWq0P37wYJxNHAJ6sDZhIHo6uqiZSagQWlKR75VhK8vgAiNEDTcCmU7d2lXxpB0bdF4xynYUMaSYdKJds1DQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>12.3-test</title>
+            <pubDate>Wed, 21 Oct 2026 11:22:54 +0000</pubDate>
+            <link>https://sosotalayvadze-dotcom.github.io/call-copilot-updates/</link>
+            <sparkle:version>12.3.11</sparkle:version>
+            <sparkle:shortVersionString>12.3-test</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.2</sparkle:minimumSystemVersion>
+            <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/CallCopilot-12.3.11.zip" length="5260744" type="application/octet-stream" sparkle:edSignature="PgK5qn8T8VcnSj2hXCRgKZXbQkYj8N9IxT9dJQKGgIRed6NJGDVNCWUpPVDlNF19LTrlrYBFC4Cj3rktTdI3Cw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/Call%20Copilot12.3.11-12.3.10.delta" sparkle:deltaFrom="12.3.10" length="372254" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976240" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Uq/ahSXYw4EbiTNiKShjrNi1/u+VSHQc9bqD3hJXvUhJl46+bhyZYpVf35YK27izIHUeN04xUAbm9xT3rEIBAA=="/>
+                <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/Call%20Copilot12.3.11-12.2.6.delta" sparkle:deltaFrom="12.2.6" length="936138" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976240" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="zK9dYf7IZw1ZRENazvZMI8n4E4T/v8EElKVJE46u6psasbqfvKDibKb36947ZMUco4nTSqJPoDWWjQ3LtRgtDw=="/>
+            </sparkle:deltas>
+        </item>
+    </channel>
+</rss>
