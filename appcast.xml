@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Call Copilot</title>
+        <item>
+            <title>15.0-test</title>
+            <pubDate>Fri, 30 Oct 2026 19:05:11 +0000</pubDate>
+            <link>https://sosotalayvadze-dotcom.github.io/call-copilot-updates/</link>
+            <sparkle:version>15.0.34</sparkle:version>
+            <sparkle:shortVersionString>15.0-test</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.2</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Version 15 — smarter Groq answers (GPT-OSS 120B), Georgian fixes</h3>
+<ul>
+<li>Answers now come from Groq's bigger model, GPT-OSS 120B, using the Groq key you already saved. No new key or paid plan is needed.</li>
+<li>Settings → Groq → Answer model: "Quality — GPT-OSS 120B" (the new default) or "Fast — GPT-OSS 20B" (the model used until now). You can also choose how long it thinks before answering (Low, Medium, High). If 120B fails or is busy, 20B answers instead (you can switch this off).</li>
+<li>Gemini has been removed. Groq is the only automatic AI. OpenAI can still be chosen by hand if you have your own OpenAI key.</li>
+<li>New: Settings → Groq → "Test both models" asks 120B and 20B one Georgian question each. "Compare 120B and 20B" runs a fixed set of test questions (Georgian, plus English and Turkish if you choose) on both and saves a report you can send. It never runs during a call.</li>
+<li>The copilot answers as you, not as the other person: when they quiz you, it answers; when they offer "a harder question or the same level?", it picks one for you. It no longer offers to ask them questions.</li>
+<li>Georgian answers use Georgian letters only (no Russian words like "генерал") and the usual Georgian forms of names (ავგუსტუსი, პომპეუსი). When the words are too garbled to understand, it asks them to repeat instead of making something up.</li>
+<li>Fixed: one Georgian sentence could appear twice (a duplicate grey bubble).</li>
+<li>Fixed: when the recognizer invents words during silence on the customer's side, those words no longer start an early AI answer.</li>
+<li>Fixed: a sentence that ChatGPT said, heard again by your Mac's microphone, is now recognized as echo more reliably in Georgian, and stops switching back and forth while it is still being heard.</li>
+<li>Test report fixes: it now names the AI model Groq actually answered with; it no longer says "recognition runs in English" when Georgian was recognized; each sentence shows its own timing notes (before, some showed the other speaker's); a sentence still in progress is no longer called "dropped at Stop"; hidden replies are shown as words, not code; Russian words in a suggestion are flagged; and the audio level of each side is recorded every 30 seconds.</li>
+</ul>
+<h3>Version 14.2 — update button</h3>
+<ul>
+<li>A "Check for Updates" button now sits at the bottom of the left sidebar, next to your version number. Updates still install by themselves; the button looks right away. It is greyed out during a call.</li>
+</ul>
+<h3>Version 14.1 — clearer ElevenLabs connection check</h3>
+<ul>
+<li>Settings → Credentials → Test connections now says exactly what ElevenLabs answered: the key is invalid, the key is missing a permission, a quota or billing limit, or the key never reached ElevenLabs. Before, every one of these showed as "ElevenLabs rejected the key".</li>
+<li>Live Georgian recognition connects the same way as the test: your key goes to ElevenLabs only to get a short-lived pass for the live connection, and any refusal names its real reason.</li>
+</ul>
+<h3>Version 14 — Georgian</h3>
+<ul>
+<li>Georgian is recognized as Georgian, in Georgian letters: choose KA on the main screen (next to EN and TR). Answers are written directly in natural Georgian.</li>
+<li>Two ways to hear Georgian: ElevenLabs (online, very accurate) or NVIDIA's free Georgian model running on your Mac (no internet needed once set up). If ElevenLabs drops out during a call, your Mac's model takes over and ElevenLabs is tried again later, between sentences.</li>
+<li>New: Settings → Privacy mode. "Cloud-assisted", "Local speech + online AI" (audio never leaves your Mac) or "Strict offline" (nothing leaves your Mac; transcript only). The main screen shows the mode while you listen.</li>
+<li>New: Settings → Credentials for your ElevenLabs key and (optional) Hugging Face token, saved in your Mac's Keychain. Press "Test connections" to check them. Nothing is sent to ElevenLabs until you switch on "Allow call audio to be sent to ElevenLabs".</li>
+<li>New: Settings → Local Georgian model → Set up (needs Python 3.12 from python.org; downloads about 3 GB once).</li>
+<li>Before a real call, the "has everyone agreed" question now also says exactly where your audio and text will go.</li>
+<li>English and Turkish work as before (Deepgram and Apple). Pause now also closes the ElevenLabs connection.</li>
+<li>Still to be checked on your Mac: a real Georgian call, the speed of the local model on your M4, and Georgian answer wording by a fluent speaker.</li>
+</ul>
+<h3>Version 13.1 — smarter, steadier Turkish answers</h3>
+<ul>
+<li>Questions, requests ("anlat bakalım") and worries ("vaktim yok", "I'm not sure") get an answer on the first try, instead of an empty card that needed "Answer now".</li>
+<li>No hidden AI requests while the other person is still talking. Those wasted requests used up the fast AI's per-minute limit, which made some answers come from the slower backup (about 3 seconds).</li>
+<li>The copilot works out who you are talking to (a business owner you sell to, or someone you want as a sales partner) and answers toward your goal.</li>
+<li>Shorter, more natural Turkish lines that answer the real point first, with no stock phrases like "Anlayışla karşılıyorum" or "Merak etme".</li>
+<li>No promises your briefing does not make: payment times, "no risk", training, trials. Sale price, profit and someone's share are kept apart.</li>
+<li>"Sana bir şey soracağım…" waits for the actual question instead of getting a generic answer.</li>
+<li>When you read the green line aloud, the copilot remembers the line itself, not the microphone's misheard words.</li>
+<li>Recognition hints use the real names from your briefing, without junk like "I'm", "That's" or "chat 24".</li>
+<li>Test report: each AI request is listed once (the last report showed every request twice), with honest counts for rewritten sentences, possible echo mistakes and empty AI replies.</li>
+</ul>
+<h3>Version 13 — English and Turkish</h3>
+<ul>
+<li>Choose the spoken language: English or Turkish. A small EN/TR switch is on the main screen next to the Call / Briefing / History tabs, and the same choice is in Settings → Spoken Language. The app remembers it.</li>
+<li>Switch during a call: one click (or the shortcut) changes the language for your microphone, the customer and the answers. The call, the microphone and WhatsApp keep running, and everything said before stays; the next answer uses it, in the new language.</li>
+<li>Keyboard shortcut from any app (WhatsApp, Chrome, Zoom): Control-Option-L by default. Change it or turn it off in Settings.</li>
+<li>Turkish answers are written in natural spoken Turkish with Turkish letters; words like website, hosting and domain, names and your prices stay exactly as they are. The app itself stays in English.</li>
+<li>The status beside the switch shows what is really happening: "TR — Listening", "Switching Language", "Recognition Unavailable" or "Microphone Unavailable".</li>
+<li>Settings → Language test: speak a sentence in English or Turkish and see the text, or test one answer in that language, without a call.</li>
+<li>If your Mac cannot recognize Turkish for one side, the app says so instead of pretending; the test report lists every switch and how long it took.</li>
+</ul>
+<h3>Version 12.3</h3>
+<ul>
+<li>Connected sentences ("Facebook works fine for us. Don't need anything else.") get one answer, never while the customer is still talking.</li>
+<li>Common moments are answered at once without the AI: Facebook, "happy as we are", "no time for extra stuff", "go ahead, 20 seconds".</li>
+<li>"No time for extra stuff" means the work, not the call: never asks for 20 seconds again.</li>
+<li>When the AI is busy or slow (over 1.2 s), the approved line appears instead of nothing; a busy provider is paused for a while.</li>
+<li>Your misheard microphone words ("Greg") no longer confuse the copilot.</li>
+<li>If the AI is too slow on an unusual question, you get an honest "Good question, I'll confirm that" line instead of a sales line.</li>
+<li>The test report shows where the time went: hearing the customer vs. getting the answer, and how many answers were instant.</li>
+</ul>
+]]></description>
+            <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/CallCopilot-15.0.34.zip" length="6446890" type="application/octet-stream" sparkle:edSignature="oY9u27dT9Qiv8PjnoHD/5ONJjQb70QFzGpogEEI30/bQUYlOb8Kf60d+R8r/XGV2lTDDLF9ky7Tcthy+pAZQCw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/Call%20Copilot15.0.34-14.2.30.delta" sparkle:deltaFrom="14.2.30" length="1371214" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976240" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="jFP1QCdME0s1sDadf9tfjcElH3KOcwE4ajaf5Qm4BUOfx1uA7h8fLVu4vt9FeDId0Jdn4q51+fjbiyAr4LyrBQ=="/>
+                <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/Call%20Copilot15.0.34-14.1.29.delta" sparkle:deltaFrom="14.1.29" length="1384122" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976240" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Auudy1t8FFwxo2fJwzfFw3DBquf41NNPPPVKLLokFsfb1lc9qpL8UL5QniOYGb4vzIN3Q9I0IPZpw8e0i3K1Cg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>14.2-test</title>
+            <pubDate>Fri, 30 Oct 2026 13:37:51 +0000</pubDate>
+            <link>https://sosotalayvadze-dotcom.github.io/call-copilot-updates/</link>
+            <sparkle:version>14.2.30</sparkle:version>
+            <sparkle:shortVersionString>14.2-test</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.2</sparkle:minimumSystemVersion>
+            <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/CallCopilot-14.2.30.zip" length="6237168" type="application/octet-stream" sparkle:edSignature="KNDDQEWYIsf68CdXqvdyA/E2JUxRY16+wyePF18Rwg5hzwzA7U0Ywt2oj7PvyWa2QZ84L+uN/nVrm4fqBFHrAQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/Call%20Copilot14.2.30-14.1.29.delta" sparkle:deltaFrom="14.1.29" length="540146" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976240" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="UXyudUpzX80MYeqFofUpmYUw263M2NIjnSqV461UwOQpJd6tLzZS3k2eBPNJWoCN3Sc597Ra7eqzsEBOe47OBQ=="/>
+                <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/Call%20Copilot14.2.30-14.0.27.delta" sparkle:deltaFrom="14.0.27" length="771998" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976240" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="u3AC2AEc2RzgW4wlVBh1SSAC8wln8ZyWDba21ImIiwY4w1VoGbAL9M8kWlEYcKXvD4xb23XtrdUEfsFUsMpvBg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>14.1-test</title>
+            <pubDate>Fri, 30 Oct 2026 13:29:22 +0000</pubDate>
+            <link>https://sosotalayvadze-dotcom.github.io/call-copilot-updates/</link>
+            <sparkle:version>14.1.29</sparkle:version>
+            <sparkle:shortVersionString>14.1-test</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.2</sparkle:minimumSystemVersion>
+            <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/CallCopilot-14.1.29.zip" length="6229239" type="application/octet-stream" sparkle:edSignature="egqoaX6n3Wj7nF7Mq1pU2q4jIv6WLaIR1HRqq29ABJIpohU4H71f56M6NM7ZxZxcfk3qH7CWdo/N2P7/GrpvDw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/Call%20Copilot14.1.29-14.0.27.delta" sparkle:deltaFrom="14.0.27" length="626418" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976240" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Ywwh2Mhu5Y/f7Dsx2YcSmfgwUYCgz3mMTikc644KwVtonOgfRTYpfsjiDotEJlcwdBeyRi2mVHfNEsfIkVjJCw=="/>
+                <enclosure url="https://sosotalayvadze-dotcom.github.io/call-copilot-updates/Call%20Copilot14.1.29-13.1.19.delta" sparkle:deltaFrom="13.1.19" length="1659090" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976240" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="y86heWCxcVzoeMs7h4YvxgrAaxrVg/zZvYUcgGbqFQKEykAa5k3O0nIN31rSG0G6njz6x5WXi2z6PMIup4roCw=="/>
+            </sparkle:deltas>
+        </item>
+    </channel>
+</rss>
